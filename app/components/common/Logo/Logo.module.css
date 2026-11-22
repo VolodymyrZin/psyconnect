@@ -1,0 +1,31 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.logoText {
+  font-weight: var(--font-weight-bold);
+  color: var(--green);
+}
+
+.header {
+  .logoText {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-heading);
+  }
+
+  .logoIcon {
+    width: 24px;
+    height: 24px;
+  }
+}
+.footer {
+  .logoText {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-normal);
+  }
+  .logoIcon {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,59 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0;
+  background-color: var(--green-body);
+}
+.navMain {
+  display: flex;
+}
+.navList {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.navHomeLink {
+  display: block;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-text);
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
+}
+.navPsyLink {
+  display: block;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-text);
+}
+.navAccountList {
+  display: flex;
+  gap: 17px;
+  justify-content: center;
+  align-items: center;
+}
+.loginLink {
+  display: block;
+  border: 1px solid var(--grey-border);
+  border-radius: 8px;
+  color: var(--black);
+  padding: 8px 16px;
+  transition: border 0.3ms ease-in-out;
+}
+.loginLink:hover,
+.loginLink:focus {
+  border: 1px solid var(--green-hover);
+}
+.registerLink {
+  display: block;
+  border-radius: 8px;
+  color: var(--white);
+  box-shadow: 0 1px 2px 0 rgba(0, 57, 37, 0.2);
+  background-color: var(--green);
+  padding: 8.5px 16px 9.5px 16px;
+}
+.registerLink:hover,
+.registerLink:focus {
+  background-color: var(--green-hover);
+}
