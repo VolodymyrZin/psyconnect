@@ -39,11 +39,14 @@
   border-radius: 8px;
   color: var(--black);
   padding: 8px 16px;
-  transition: border 0.3ms ease-in-out;
-}
-.loginLink:hover,
-.loginLink:focus {
-  border: 1px solid var(--green-hover);
+  transition: border 0.3s ease-in-out;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--green-hover);
+  }
+  &:active {
+    border: 1px solid var(--green-active);
+  }
 }
 .registerLink {
   display: block;
@@ -52,8 +55,11 @@
   box-shadow: 0 1px 2px 0 rgba(0, 57, 37, 0.2);
   background-color: var(--green);
   padding: 8.5px 16px 9.5px 16px;
-}
-.registerLink:hover,
-.registerLink:focus {
-  background-color: var(--green-hover);
+  &:hover,
+  &:focus {
+    background-color: var(--green-hover);
+  }
+  &:active {
+    background-color: var(--green-active);
+  }
 }

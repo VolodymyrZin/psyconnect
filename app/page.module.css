@@ -1,0 +1,7 @@
+.homePageContainer {
+  padding-top: 40px;
+  padding-bottom: 102px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
