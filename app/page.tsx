@@ -3,11 +3,9 @@ import StatsBar from './components/HomePage/StatsBar/StatsBar';
 import css from './page.module.css';
 export default function HomePage() {
   return (
-    <main>
-      <div className={`container ${css.homePageContainer}`}>
-        <HeroSection />
-        <StatsBar />
-      </div>
+    <main className={`container ${css.homePageContainer}`}>
+      <HeroSection />
+      <StatsBar />
     </main>
   );
 }

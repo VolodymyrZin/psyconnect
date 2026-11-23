@@ -1,0 +1,8 @@
+.psychologistsPageContainer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: rgba(247, 250, 248, 0.8);
+}

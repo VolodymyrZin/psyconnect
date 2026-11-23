@@ -1,0 +1,31 @@
+.filterBar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid rgba(191, 201, 193, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
+.filterList {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+}
+.filterItem {
+  flex: 0 1 350px;
+}
+.clearFilterBtn {
+  border: none;
+  background-color: transparent;
+  color: #0f5238;
+}
+.wrapperSvg {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.text {
+  font-weight: var(--font-weight-semibold);
+}

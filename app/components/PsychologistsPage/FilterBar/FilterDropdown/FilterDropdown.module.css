@@ -1,0 +1,18 @@
+.filterDropdown {
+  display: flex;
+  flex-direction: column;
+}
+.filterName {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+  color: var(--black);
+  padding: 8px 16px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  white-space: nowrap;
+}
