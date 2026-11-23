@@ -1,9 +1,14 @@
 import css from './HeroSection.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import {
+  IconShieldFilled,
+  IconCheck,
+  IconStarFilled,
+} from '@tabler/icons-react';
 export default function HeroSection() {
   return (
-    <main className={css.wrapperHero}>
+    <section className={css.wrapperHero}>
       <div className={css.textHero}>
         <span className={css.heroBadge}>
           <svg
@@ -34,6 +39,17 @@ export default function HeroSection() {
         </Link>
       </div>
       <div className={css.imageHero}>
+        <div className={css.badgeTop}>
+          <div className={css.ovalBgrShield}>
+            <IconShieldFilled
+              size={20}
+              color="#0F5238"
+              className={css.shieldIcon}
+            />
+            <IconCheck color="#a0f4c8" stroke={4} className={css.tickIcon} />
+          </div>
+          <div className={css.badgeText}>Licensed Specialists</div>
+        </div>
         <Image
           src={'/images/heroImage.avif'}
           className={css.image}
@@ -42,7 +58,17 @@ export default function HeroSection() {
           alt="woman psychologist"
           loading="eager"
         />
+        <div className={css.badgeBottom}>
+          <div className={css.circleBgrStar}>
+            <IconStarFilled
+              size={20}
+              color="#EAB308"
+              className={css.starIcon}
+            />
+          </div>
+          <div>4.8 Average Rating</div>
+        </div>
       </div>
-    </main>
+    </section>
   );
 }

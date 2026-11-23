@@ -3,5 +3,6 @@
   padding-bottom: 102px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 150px;
+  background-color: rgba(247, 250, 248, 0.8);
 }

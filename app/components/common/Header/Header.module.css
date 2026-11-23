@@ -1,8 +1,11 @@
 .headerContainer {
   display: flex;
   justify-content: space-between;
-  padding: 13px 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
   background-color: var(--green-body);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 .navMain {
   display: flex;

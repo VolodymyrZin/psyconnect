@@ -56,7 +56,60 @@
     background-color: var(--green-active);
   }
 }
+.badgeTop {
+  border: 1px solid rgba(191, 201, 193, 0.3);
+  border-radius: 12px;
+  padding: 16px;
 
+  box-shadow: 0 12px 24px 0 rgba(45, 106, 79, 0.1);
+  background-color: #f7faf8;
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ovalBgrShield {
+  width: 32px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #a0f4c8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tickIcon {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+}
+.badgeBottom {
+  border: 1px solid rgba(191, 201, 193, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 12px 24px 0 rgba(45, 106, 79, 0.1);
+  background: #f7faf8;
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 7.5px;
+}
+.circleBgrStar {
+  width: 36px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #a0f4c8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.badgeText {
+  color: #181c1c;
+}
 .imageHero {
   border: 1px solid #bfc9c133;
   border-radius: 32px;
@@ -64,6 +117,9 @@
   background-color: var(--green-footer);
   overflow: hidden;
   flex: 1;
+  object-fit: cover;
+  align-self: flex-start;
+  position: relative;
 }
 .image {
   display: block;
