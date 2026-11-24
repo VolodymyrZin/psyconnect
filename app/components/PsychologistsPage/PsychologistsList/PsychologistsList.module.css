@@ -1,0 +1,22 @@
+.psychologistsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 24px;
+  align-items: flex-start;
+}
+.loadMoreBtn {
+  color: var(--green);
+  border: 2px solid var(--green);
+  border-radius: 9999px;
+  padding: 12px 32px;
+  align-self: center;
+  background-color: var(--green-body);
+  transition: border 0.3s ease-in-out;
+  &:hover,
+  &:focus {
+    border: 2px solid var(--green-hover);
+  }
+  &:active {
+    border: 2px solid var(--green-active);
+  }
+}

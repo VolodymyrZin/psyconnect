@@ -1,6 +1,10 @@
 import css from './FilterBar.module.css';
 import FilterDropdown from './FilterDropdown/FilterDropdown';
+import specializations from '../../../data/specializations.json';
+import approaches from '../../../data/approaches.json';
+export type PriceFilterOption = 'All' | 'Under $50' | 'Under $100';
 export default function FilterBar() {
+  const priceFilterOption = [PriceFilterOption];
   return (
     <section className={css.filterBar}>
       <div className={css.wrapperSvg}>
@@ -11,13 +15,22 @@ export default function FilterBar() {
       </div>
       <ul className={css.filterList}>
         <li className={css.filterItem}>
-          <FilterDropdown filterName="Specialization" />
+          <FilterDropdown
+            filterName="Specialization"
+            options={specializations}
+          />
         </li>
         <li className={css.filterItem}>
-          <FilterDropdown filterName="Therapeutic Approach" />
+          <FilterDropdown
+            filterName="Therapeutic Approach"
+            options={approaches}
+          />
         </li>
         <li className={css.filterItem}>
-          <FilterDropdown filterName="Price per Session" />
+          <FilterDropdown
+            filterName="Price per Session"
+            options={PricePerHour}
+          />
         </li>
       </ul>
       <button type="button" className={css.clearFilterBtn}>
