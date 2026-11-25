@@ -20,6 +20,7 @@ export default function PsychologistsList() {
       <button type="button" className={css.loadMoreBtn}>
         Load more psychologists
       </button>
+      <p className={css.endMessage}>You&#39;ve seen all specialists.</p>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import css from './FilterDropdown.module.css';
-import { IconChevronDown } from '@tabler/icons-react';
+import { IconCheck, IconChevronDown } from '@tabler/icons-react';
 export interface FilterDropdownProps {
   filterName: string;
   options: string[];
@@ -14,9 +14,20 @@ export default function FilterDropdown({
         {filterName}
         <IconChevronDown stroke={2} size={24} aria-hidden="true" />
       </button>
-      <ul>
-        {options.map(option => (
-          <li key={option}>{option}</li>
+      <ul className={`${css.optionsList} ${css.open}`}>
+        {options.map((option, index) => (
+          <li
+            key={option}
+            className={`${css.optionsItem} ${index === 1 ? css.selected : ''}`}
+          >
+            {option}
+            <IconCheck
+              color="#0D6C4A"
+              stroke={3}
+              className={css.tickIcon}
+              size={10}
+            />
+          </li>
         ))}
       </ul>
     </div>

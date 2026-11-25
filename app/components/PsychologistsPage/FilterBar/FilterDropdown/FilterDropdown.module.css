@@ -1,6 +1,6 @@
 .filterDropdown {
   display: flex;
-  flex-direction: column;
+  position: relative;
 }
 .filterName {
   font-weight: var(--font-weight-regular);
@@ -15,4 +15,41 @@
   justify-content: space-between;
   border: none;
   white-space: nowrap;
+}
+.optionsList {
+  display: none;
+  &.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 89px;
+    left: 0;
+    z-index: 999;
+    border: 1px solid #bfc9c1;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px 0 rgba(45, 106, 79, 0.05);
+    background: #fff;
+    width: 100%;
+    .optionsItem {
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #707973;
+
+      &.selected {
+        background: rgba(15, 82, 56, 0.1);
+        .tickIcon {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.tickIcon {
+  display: none;
 }
