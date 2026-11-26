@@ -84,5 +84,6 @@ ul {
   margin-right: auto;
   padding-left: 64px;
   padding-right: 64px;
+  background-color: var(--green-body);
   outline: 1px solid red;
 }

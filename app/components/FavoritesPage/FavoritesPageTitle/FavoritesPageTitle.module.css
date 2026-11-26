@@ -1,0 +1,20 @@
+.favoritesTitleSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+.favoritesTitle {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  color: #181c1c;
+}
+.favoritestText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #404943;
+}

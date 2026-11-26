@@ -1,0 +1,55 @@
+.toastNotification {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+  width: min(360px, calc(100vw - 32px));
+  position: fixed;
+  right: 16px;
+  bottom: 17px;
+  z-index: 999;
+}
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: transparent;
+  border: none;
+}
+.iconBgr {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #a0f4c8;
+  align-self: start;
+}
+.toastNotificationContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.toastNotificationTitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #181c1c;
+}
+.toastNotificationText {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: 0.01em;
+  color: #181c1c;
+}
+.loginBtn {
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: 0.01em;
+  color: #181c1c;
+  border: 1px solid #bfc9c1;
+  border-radius: 8px;
+  align-self: start;
+}

@@ -1,0 +1,25 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.73);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalBox {
+  background-color: #f1f4f2;
+  border: 1px solid rgba(191, 201, 193, 0.3);
+  border-radius: 12px;
+  position: relative;
+  width: fit-content;
+  max-width: calc(100vw - 32px);
+  overflow: hidden;
+}
+.closeBtn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: transparent;
+  border: none;
+}

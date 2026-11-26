@@ -1,0 +1,29 @@
+.bookSessionContent {
+  width: min(588px, calc(100vw - 24px));
+  background-color: #fff;
+}
+.bookSessionTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #181c1c;
+  border-bottom: 1px solid #e0e3e1;
+  padding: 16px 24px;
+}
+.bookSessionInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #f7faf8;
+  padding: 24px;
+}
+.wrapperImg {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.psyName {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #181c1c;
+}

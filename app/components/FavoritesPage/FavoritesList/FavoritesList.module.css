@@ -1,0 +1,7 @@
+.favoritesList {
+  padding-bottom: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 24px;
+  align-items: flex-start;
+}

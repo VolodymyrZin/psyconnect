@@ -1,0 +1,269 @@
+.bookingFormFields {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 205px;
+  width: 100%;
+  background-color: #f7faf8;
+}
+.inputLabel {
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: 0.01em;
+  color: #181c1c;
+}
+.inputWrapper {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.inputIconMan {
+  position: absolute;
+  top: 11px;
+  left: 19px;
+}
+.inputIconComp {
+  position: absolute;
+  top: 9px;
+  left: 16px;
+}
+.inputIconEye {
+  position: absolute;
+  top: 9px;
+  right: 16px;
+}
+.inputField {
+  border: 1px solid #bfc9c1;
+  border-radius: 8px;
+  width: 100%;
+  padding: 8px 48px;
+  background-color: #f7faf8;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #181c1c;
+  transition: border 0.3s ease-in-out;
+  outline: none;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--green-hover);
+  }
+  &:active {
+    border: 1px solid var(--green-active);
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #6b7280;
+  }
+}
+.wrapperBtn {
+  display: flex;
+  gap: 8px;
+  justify-content: end;
+  padding: 16px 24px;
+  border-top: 1px solid #e0e3e1;
+}
+.cancelBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #bfc9c1;
+  border-radius: 8px;
+  padding: 8px 16px;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #181c1c;
+  transition: border 0.3s ease-in-out;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--green-hover);
+  }
+  &:active {
+    border: 1px solid var(--green-active);
+  }
+}
+.submitBtn {
+  display: block;
+  border: none;
+  border-radius: 8px;
+  padding: 8.5px 16px 9.5px;
+  box-shadow: 0 1px 2px 0 rgba(0, 57, 37, 0.2);
+  background-color: #0d6c4a;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: var(--green-hover);
+  }
+  &:active {
+    background-color: var(--green-active);
+  }
+}
+.authSwitchText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #404943;
+  gap: 6px;
+  display: flex;
+}
+.authSwitchBtn {
+  display: block;
+  color: #003925;
+  border: none;
+  background-color: transparent;
+}
+.dateTimeFieldsWrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.selectWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.timeField {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6b7280;
+}
+.dateField {
+  border: 1px solid #bfc9c1;
+  border-radius: 8px;
+  width: 100%;
+  padding: 7px 16px;
+  background-color: #f7faf8;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #6b7280;
+  transition: border 0.3s ease-in-out;
+  outline: none;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--green-hover);
+  }
+  &:active {
+    border: 1px solid var(--green-active);
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #6b7280;
+  }
+}
+.selectField {
+  border: 1px solid #bfc9c1;
+  border-radius: 8px;
+  width: 100%;
+  padding: 8px 16px;
+  background-color: #f7faf8;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #6b7280;
+  appearance: none;
+  transition: border 0.3s ease-in-out;
+  outline: none;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--green-hover);
+  }
+  &:active {
+    border: 1px solid var(--green-active);
+  }
+}
+.selectField option:checked {
+  background-color: #0d6c4a;
+
+  color: #f7faf8;
+}
+.arrowIcon {
+  position: absolute;
+  top: 32px;
+  right: 20px;
+  pointer-events: none;
+}
+
+.successState {
+  padding: 115px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.successIconWrapperOuter {
+  border-radius: 9999px;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 1px 2px 0 rgba(160, 244, 200, 0.5);
+  background: #a0f4c8;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.successTitle {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #181c1c;
+  margin-bottom: 8px;
+}
+.successText {
+  max-width: 306px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #404943;
+  margin-bottom: 32px;
+}
+.closeBtn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 57, 37, 0.2);
+  background-color: #0d6c4a;
+  width: 100%;
+  padding-top: 8.5px;
+  padding-bottom: 9.5px;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: var(--green-hover);
+  }
+  &:active {
+    background-color: var(--green-active);
+  }
+}

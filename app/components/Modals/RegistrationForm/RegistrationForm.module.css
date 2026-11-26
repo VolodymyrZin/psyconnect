@@ -1,0 +1,111 @@
+.registrationFormContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 32px;
+  max-width: 464px;
+}
+.registrationFormTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #003925;
+}
+.registrationFormText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #404943;
+  margin-bottom: 24px;
+}
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.inputLabel {
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: 0.01em;
+  color: #181c1c;
+}
+.inputWrapper {
+  position: relative;
+}
+.inputIconMan {
+  position: absolute;
+  top: 11px;
+  left: 19px;
+}
+.inputIconComp {
+  position: absolute;
+  top: 9px;
+  left: 16px;
+}
+.inputIconEye {
+  position: absolute;
+  top: 9px;
+  right: 16px;
+}
+.inputField {
+  border: 1px solid #bfc9c1;
+  border-radius: 8px;
+  width: 100%;
+  padding: 8px 48px;
+  background-color: #f7faf8;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #181c1c;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #6b7280;
+  }
+}
+.submitBtn {
+  display: block;
+  border: none;
+  border-radius: 8px;
+  padding: 9.5px;
+  margin: 0 auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 57, 37, 0.2);
+  background-color: #0d6c4a;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: var(--green-hover);
+  }
+  &:active {
+    background-color: var(--green-active);
+  }
+}
+.authSwitchText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #404943;
+  gap: 6px;
+  display: flex;
+}
+.authSwitchBtn {
+  display: block;
+  color: #003925;
+  border: none;
+  background-color: transparent;
+}
