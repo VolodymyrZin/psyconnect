@@ -1,3 +1,4 @@
+'use client';
 import css from './PsychologistCard.module.css';
 import Image from 'next/image';
 import {
@@ -7,7 +8,18 @@ import {
   IconWorld,
   IconChevronDown,
 } from '@tabler/icons-react';
-export default function PsychologistCard() {
+
+import type { PsychologistModalData } from '@/app/types/psychologist';
+import { useModalStore } from '@/app/store/modalStore';
+export default function PsychologistCard({
+  id,
+  name,
+  avatar_url,
+}: PsychologistModalData) {
+  const openBooking = useModalStore(state => state.openBooking);
+  const handleBookingClick = () => {
+    openBooking({ id, name, avatar_url });
+  };
   return (
     <li className={`${css.cardItem} ${css.expanded}`}>
       <div className={css.freeSessionBadge}>
@@ -24,15 +36,15 @@ export default function PsychologistCard() {
       <div className={css.cardOverview}>
         <div className={css.wrapperImage}>
           <Image
-            src={'/images/heroImage.avif'}
+            src={avatar_url}
             width={80}
             height={80}
-            alt={'session'}
+            alt={name}
             className={css.image}
           />
         </div>
         <div className={css.cardDetails}>
-          <h3 className={css.name}>Name</h3>
+          <h3 className={css.name}>{name}</h3>
           <ul className={css.cardInfoList}>
             <li className={css.cardInfoItem}>
               <IconStar stroke={2} size={12} color="#FBBF24" />
@@ -131,7 +143,11 @@ export default function PsychologistCard() {
             <span className={css.readMoreBtnText}>Read more</span>
             <IconChevronDown stroke={2} size={24} aria-hidden="true" />
           </button>
-          <button className={css.bookingBtn} type="button">
+          <button
+            className={css.bookingBtn}
+            type="button"
+            onClick={handleBookingClick}
+          >
             Book a session
           </button>
         </div>

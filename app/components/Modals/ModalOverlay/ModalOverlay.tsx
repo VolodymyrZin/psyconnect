@@ -4,13 +4,19 @@ import type { ReactNode } from 'react';
 
 export interface ModalOverlayProps {
   children: ReactNode;
+  onClose: () => void;
 }
 
-export default function ModalOverlay({ children }: ModalOverlayProps) {
+export default function ModalOverlay({ children, onClose }: ModalOverlayProps) {
   return (
     <div className={css.backdrop}>
       <div className={css.modalBox}>
-        <button type="button" className={css.closeBtn} aria-label="Close modal">
+        <button
+          onClick={onClose}
+          type="button"
+          className={css.closeBtn}
+          aria-label="Close modal"
+        >
           <IconX stroke={2} color="#404943" aria-hidden="true" />
         </button>
         {children}
